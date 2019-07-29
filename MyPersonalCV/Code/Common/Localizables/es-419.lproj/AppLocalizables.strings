@@ -1,0 +1,21 @@
+/* 
+  AppLocalizables.strings
+  MyPersonalCV
+
+  Created by Eduardo Alvarado on 7/18/19.
+  Copyright © 2019 Empresa. All rights reserved.
+*/
+
+// -- COMMON -----------------------------------------------
+"loading_title" = "Cargando...";
+"app_title" = "CV info";
+
+// -- ERROR MESSAGES ---------------------------------------
+"error_title" = "Oops...";
+"error_msg_default" = "Algo salió mal.";
+"error_msg_badResponse" = "No puedo parsear la respuesta.";
+"error_msg_badURL" = "No puedo construir la URL.";
+"error_msg_noNetworkConnection" = "No hay conexión a internet.";
+"error_msg_timeout" = "Se acabó el tiempo :(";
+"error_msg_emptySections" = "No hay secciones que mostrar.";
+"error_accept_button" = "Aceptar";

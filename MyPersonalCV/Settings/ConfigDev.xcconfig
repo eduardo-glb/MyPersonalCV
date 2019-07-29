@@ -1,0 +1,12 @@
+//
+//  ConfigDev.xcconfig
+//  MyPersonalCV
+//
+//  Created by Eduardo Alvarado on 7/22/19.
+//  Copyright © 2019 Empresa. All rights reserved.
+//
+
+API_BASE_URL = gist.githubusercontent.com
+
+GETCVINFO_SUCCESS = eduardo-glb/bf9948eb69c68f7147deb99e47a40730/raw/4a806ea09c23f124aadff174ca0489a54de5e796/InfoCV.json
+GETCVINFO_FAIL = eduardo-glb/47234e18b39f74410177ea363869102c/raw/2af188ad2e3cf86bfd6a3749e1059d02aa3cdade/differentInfoCV.json

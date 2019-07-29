@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCi-Ig-2T6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Display InfoCV View Controller-->
+        <scene sceneID="TFe-pg-VT1">
+            <objects>
+                <viewController storyboardIdentifier="DisplayInfoCVViewController" id="nCi-Ig-2T6" customClass="DisplayInfoCVViewController" customModule="MyPersonalCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddD-zQ-U5z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YTV-78-aai">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYb-LT-ZjU">
+                                    <size key="itemSize" width="300" height="64"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="BPY-QJ-nnm">
+                                        <rect key="frame" x="57" y="8" width="300" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nCi-Ig-2T6" id="i1T-tl-YbO"/>
+                                    <outlet property="delegate" destination="nCi-Ig-2T6" id="UFU-IP-Vyv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YTV-78-aai" firstAttribute="leading" secondItem="ABJ-zh-ihh" secondAttribute="leading" id="F51-bC-tF0"/>
+                            <constraint firstItem="ABJ-zh-ihh" firstAttribute="bottom" secondItem="YTV-78-aai" secondAttribute="bottom" id="Fyu-Ru-fXr"/>
+                            <constraint firstItem="YTV-78-aai" firstAttribute="top" secondItem="ABJ-zh-ihh" secondAttribute="top" id="Ica-Ge-6XZ"/>
+                            <constraint firstItem="ABJ-zh-ihh" firstAttribute="trailing" secondItem="YTV-78-aai" secondAttribute="trailing" id="ozv-XL-GyI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ABJ-zh-ihh"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="YTV-78-aai" id="Pn6-OE-Vc6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFW-fb-lln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+</document>

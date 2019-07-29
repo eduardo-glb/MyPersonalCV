@@ -1,0 +1,11 @@
+{
+  "fullName" : "Eduardo Alvarado",
+  "photoURL" : "https://i.postimg.cc/DyhkN3H9/IMG-0014-3.jpg",
+  "experience" : [
+    {
+      "title" : "Work",
+      "description" : "Globant \niOS Developer \nAgo. 2014 - Currently working \n\nActivities: Develop new features and bug fixing.",
+      "imageURL" : "https://i.postimg.cc/wMfpz4Tx/Experience.png"
+    }
+  ]
+}

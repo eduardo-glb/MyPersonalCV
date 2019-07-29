@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AA9-nQ-Uai">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Splash View Controller-->
+        <scene sceneID="qbL-qw-GXw">
+            <objects>
+                <viewController id="AA9-nQ-Uai" customClass="CustomSplashViewController" customModule="MyPersonalCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uCY-sj-Pnz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IZm-sx-xed">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh2-iV-xPl">
+                                <rect key="frame" x="207" y="466" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldW-b2-UOx">
+                                <rect key="frame" x="207" y="862" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yh2-iV-xPl" firstAttribute="top" secondItem="IZm-sx-xed" secondAttribute="bottom" constant="8" id="23E-Ro-DHa"/>
+                            <constraint firstItem="IZm-sx-xed" firstAttribute="centerY" secondItem="uCY-sj-Pnz" secondAttribute="centerY" id="69j-yg-AUJ"/>
+                            <constraint firstItem="IZm-sx-xed" firstAttribute="centerX" secondItem="uCY-sj-Pnz" secondAttribute="centerX" id="8M2-KP-2WW"/>
+                            <constraint firstItem="ldW-b2-UOx" firstAttribute="centerX" secondItem="uCY-sj-Pnz" secondAttribute="centerX" id="F2Y-OP-5jP"/>
+                            <constraint firstItem="ldW-b2-UOx" firstAttribute="bottom" secondItem="DgX-yC-tNt" secondAttribute="bottom" id="QLx-3z-fvc"/>
+                            <constraint firstItem="yh2-iV-xPl" firstAttribute="centerX" secondItem="uCY-sj-Pnz" secondAttribute="centerX" id="vcy-Il-xMP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DgX-yC-tNt"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="IZm-sx-xed" id="ahx-hm-JNi"/>
+                        <outlet property="appTitleLabel" destination="ldW-b2-UOx" id="Lzg-sG-JaO"/>
+                        <outlet property="loadingLabel" destination="yh2-iV-xPl" id="dFk-GH-hmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnf-AQ-eUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+</document>
